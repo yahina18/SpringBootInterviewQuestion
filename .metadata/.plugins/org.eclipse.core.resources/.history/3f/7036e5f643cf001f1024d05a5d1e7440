@@ -1,0 +1,17 @@
+package com.awareInterface;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Player {
+	
+	public Player() {
+
+		System.out.println("Player object created !! ");
+         
+	}
+	
+	@Autowired
+	private Game game;
+}

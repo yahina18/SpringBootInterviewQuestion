@@ -1,0 +1,19 @@
+package com.awareInterface;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Game {
+	
+	
+	Game()
+	{
+		System.out.println("Game object Created !! ");
+	}
+	
+	public void gamePlay()
+	{
+		System.out.println("Please Start playing !! ");
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.spring.bean.scope.singleton;
+
+public class Student {
+
+}

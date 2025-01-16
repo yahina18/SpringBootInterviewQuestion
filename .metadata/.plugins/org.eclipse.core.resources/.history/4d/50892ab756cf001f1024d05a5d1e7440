@@ -1,0 +1,8 @@
+package com.awareInterface;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Greet {
+
+}

@@ -1,0 +1,11 @@
+package com.awareInterface;
+
+public class Game {
+	
+	
+	Game()
+	{
+		System.out.println("Game object Created !! ");
+	}
+
+}

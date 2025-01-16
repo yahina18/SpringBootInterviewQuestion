@@ -1,0 +1,24 @@
+package com.beanlifeCycle;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Laptop {
+	
+	
+	Battery battery;
+	
+	public Battery getBattery() {
+		return battery;
+	}
+
+	public void setBattery(Battery battery) {
+		this.battery = battery;
+	}
+
+	public void getCharger()
+	{
+		battery.charger();
+	}
+
+}

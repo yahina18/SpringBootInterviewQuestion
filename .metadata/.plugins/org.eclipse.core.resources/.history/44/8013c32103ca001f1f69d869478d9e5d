@@ -1,0 +1,13 @@
+package com.beanlifeCycle;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Battery {
+
+	
+	public void charger()
+	{
+		System.out.println("Battery get charged !! ");
+	}
+}

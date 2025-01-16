@@ -1,0 +1,37 @@
+package com.beanlifeCycle;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.annotation.PostConstruct;
+
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Teacher implements InitializingBean {
+	
+	public List<String> subject;
+	
+	
+	@PostConstruct
+	public void init()
+	{
+		subject = new ArrayList<>();
+		subject.add("Math");
+		subject.add("Science");
+		System.out.println("Init method called !!! ");
+	}
+	
+	public void teach()
+	{
+	       	for(String sub : subject)
+	       		System.out.println("Teacher : "+sub);
+	}
+
+	@Override
+	public void afterPropertiesSet() throws Exception {
+
+          System.out.println("AfterPropertiesSet method called ");
+	}
+}
